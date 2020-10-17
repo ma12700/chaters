@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chat APP</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <!-- Login part -->
+        <div id="login">
+            <span id="loginError"></span>
+            <img src="images/user.png">
+            <form>
+                <input type="email" placeholder="Email" id="loginEmail" >
+                <input type="password" placeholder="password" id="loginPassword" >
+                <button type="submit" id="loginButton">Login</button>
+            </form>
+            <a href="reset.html">forget my password?</a>
+            <a id="goRegister">Don`t have account? create one</a>
+        </div>
+        
+        <!-- register part -->
+        <div id="register">
+            <span id="registerFeedback"></span>
+            <img src="images/user.png">
+            <form>
+                <input type="text" placeholder="Username" id="registerName" >
+                <input type="email" placeholder="Email" id="registerEmail" >
+                <input type="password" placeholder="password" id="registerPassword" >
+                <div class="info">
+                    *must be at least 8 characters<br>
+                    *must contains special character, 1 uppercase and 1 lowercase letter<br>
+                </div>
+                <input type="password" placeholder="confirm password" id="registerConfirmPassword" >
+                <select id="question">
+                    <option value="1">Question 1</option>
+                    <option value="2">Question 2</option>
+                </select>
+                <input type="text" placeholder="answer security question" id="q_answer" >
+                <button id="registerButton">Register</button>
+            </form>
+            <a id="goLogin">Login instead</a>
+        </div>
+        
+        <!-- Java Script/JQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="js/jq.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

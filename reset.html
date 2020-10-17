@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chat APP</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <!-- reset part -->
+        <div id="reset">
+            <span id="resetFeedback"></span>
+            <img src="images/user.png">
+            <form>
+                <input type="email" placeholder="Enter your Email" id="resetEmail">
+                <div id="more" >
+                    <div class="resetQusetion">
+                        what is your info?
+                    </div>
+                    <input type="text" placeholder="Enyer your Answer" id="resetAnswer">
+                    <input type="password" placeholder="Enter new password" id="resetPassword" >
+                    <div class="info">
+                        *must be at least 8 characters<br>
+                        *must contains special character, 1 uppercase and 1 lowercase letter<br>
+                    </div>
+                    <input type="password" placeholder="confirm password" id="resetConfirmPassword" >
+                </div>
+                <button type="submit" id="resetButton">Send</button>
+            </form>
+            <a id="goLogin"f href="index.html">Login Now</a>
+        </div>
+        
+        <!-- register part -->
+        <div id="register">
+            <span id="registerFeedback"></span>
+            <img src="images/user.png">
+            <form>
+                <input type="text" placeholder="Username" id="registerName" >
+                <input type="email" placeholder="Email" id="registerEmail" >
+                <input type="password" placeholder="password" id="registerPassword" >
+                <div class="info">
+                    *must be at least 8 characters<br>
+                    *must contains special character, 1 uppercase and 1 lowercase letter<br>
+                </div>
+                <input type="password" placeholder="confirm password" id="registerConfirmPassword" >
+                <select id="question">
+                    <option value="1">Question 1</option>
+                    <option value="2">Question 2</option>
+                </select>
+                <input type="text" placeholder="answer security question" id="q_answer" >
+                <button id="registerButton">Register</button>
+            </form>
+            <a id="goLogin" href="index.php">Login instead</a>
+        </div>
+        
+        <!-- Java Script/JQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="js/jq.js"></script>
+        <script src="js/reset.js"></script>
+    </body>
+</html>

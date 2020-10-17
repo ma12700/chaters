@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: deepskyblue;
+    height: 100%;
+}
+
+/********************** Index Page *************************/
+img {
+    background-color: white;
+    width: 66px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid deepskyblue;
+    border-radius: 50%;
+    box-shadow: 5px 5px 6px black;
+}
+form{
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+input,select{
+    margin: auto;
+    display: block;
+    height: 25px;
+    width: 77.5%;
+    border: 2px solid deepskyblue;
+    margin-top: 15px;
+    padding: 3px;
+}
+button{
+    display: block;
+    margin: auto;
+    width: 79%;
+    font-size: 1.2em;
+    margin-top: 15px;
+    background-color: deepskyblue;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+select {
+	height: 33px;
+	width: 79%;
+}
+a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: deepskyblue;
+    margin-bottom: 50px;
+    margin-top: -15px;
+    cursor: pointer;
+}
+a:hover{
+    font-weight: bold;
+}
+#login,#register,#reset{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top:80px;
+    padding: 5px;
+    border-radius: 20px;
+}
+#register{
+    display: none;
+    margin-top: 20px;
+}
+#reset{
+    margin-top: 60px;
+}
+#more{
+    display: none;
+}
+#goLogin{
+    margin-bottom: 15px;
+}
+#loginError,#registerFeedback,#resetFeedback{
+    display: block;
+    visibility: hidden;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #ff0000c2;
+    border-radius: 7px;
+    
+}
+.resetQusetion {
+	width: 78.8%;
+	margin: auto;
+	margin-top: 14px;
+	font-size: 1.2em;
+}
+.info {
+    width: 77.5%;
+    margin: auto;
+    padding: 5px;
+    background-color: #e1e0e0;
+    margin-top: 6px;
+  }
+/***************** inbox page ********************/
+nav{
+    padding: 20px;
+    display: flex;
+    background-color: deepskyblue;
+    box-shadow: 0px 2px 9px 1px #30807a;
+    height: 70px;
+}
+#logo{
+    width: 40px;
+    margin: 0px;
+}
+#logOut {
+	height: 40px;
+	background-color: white;
+	width: 130px;
+	display: block;
+	position: absolute;
+	right: 20px;
+}
+.DB {
+	color: black;
+	background-color: white;
+	border-radius: 4px;
+	padding: 9px;
+	margin: auto;
+	display: block;
+	position: absolute;
+	right: 166px;
+	top: 35px;
+}
+.DB:hover {
+	font-weight: normal;
+}
+header{
+    display: flex;
+}
+article{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 2px solid deepskyblue;
+    margin-top: 1px;
+}
+.chat {
+    height: 84%;
+    display: none/*block*/;
+}
+.chatDetail {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+#messages{
+    height: 86%;
+    overflow: auto;
+    display: block;
+}
+aside{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div#newMessage {
+    display: none /*flex*/;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    height: 80px;
+    width: 100%;
+}
+div#newMessage img {
+	width: 28px;
+	border: 1px solid deepskyblue;
+	box-shadow: 0px 0px 4px black;
+	margin-top: -5px;
+}
+div#newMessage input{
+    margin-top: 25px;
+    margin-left: 0;
+}
+button#send {
+    background-color: white;
+    border: 0;
+    width: 50px;
+}
+.message,.message2{
+    display:block;
+    padding:5px;
+    max-width: 40%;
+    border-radius: 6px;
+    float: left;
+    margin: 10px;
+    margin-left: 20px;
+    color:black;
+    background-color:deepskyblue;
+    position: relative;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.message2{
+    float: right;
+    margin-right: 20px;
+    background-color:#EEE;
+}
+.message:after{
+  content: "";
+  position:absolute;
+  margin-top:-6px;
+  margin-right:-5px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid deepskyblue;
+  transform:rotate(45deg);
+  left: -15px; 
+  top: 10px;
+}
+.message2:after {
+  content: "";
+  position:absolute;
+  margin-top:-6px;
+  margin-left:-5px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #EEE;
+  transform:rotate(-45deg);
+  right: -15px; 
+  top: 10px;
+}
+.clear{
+    display: block;
+    width: 98%;
+    float: right;
+}
+.date{
+    display: block;
+    margin: 5px 0;
+    color: #888;
+    font-size: 0.7em;
+}
+.name{
+   font-size: 1.4em; 
+}
+input[type="search"]{
+    width: 100%;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.0em
+}
+.date{
+    float: right;
+}
+.email,.email2 {
+	font-size: .7em;
+	color: #888;
+}
+.email2{
+    font-size: 1em;
+}
+ul{
+    display: block;
+    width: 112%;
+    height: 400px;
+    overflow: auto;
+}
+ul > li{
+    display: block;
+    list-style: none;
+    border-bottom: 1px solid deepskyblue;
+    padding: 25px;
+    font-size: 1.3em;
+    position: relative;
+}
+ul > li:hover{
+    background-color: #c4ecf9;
+    cursor: pointer;
+}
+.seen {
+	height: 20px;
+	background-color: green;
+	width: 20px;
+	border-radius: 50%;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+#scrollToHere {
+	float: left;
+}
